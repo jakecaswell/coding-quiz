@@ -15,7 +15,7 @@
             <div class="col-md-11 fw-bold">
                 <a href="hiscore.html">High Scores</a>
             </div>
-            <div class="col-md-1 fw-bold">Timer: <span></span></div>
+            <div class="col-md-1 fw-bold">Timer: <span id="time"></span></div>
         </div>
     </div>
 
@@ -33,16 +33,32 @@
         </div>
     </section>
     <!-- Questions -->
-    <section class="container hide">
+    <section class="container hide" id="quiz-box">
         <div class="row d-flex justify-content-center">
             <div class="col-md-8" id="quiz-question">
-                <span>Placeholder Question</span>
-                <div class="row d-flex" id="answers">
-                    <div class="col-md-12" id="answer">answer a</div>
-                    <div class="col-md-12" id="answer">answer b</div>
-                    <div class="col-md-12" id="answer">answer c</div>
-                    <div class="col-md-12" id="answer">answer d</div>
-                </div>
+                <!-- <span class="fw-bold fs-4">Placeholder Question</span> -->
+            </div>
+            <div class="row d-flex" id="answers">
+                <button type="button" class="btn btn-dark m-1" id="answer-button"></button>
+                <button type="button" class="btn btn-dark m-1" id="answer-button"></button>
+                <button type="button" class="btn btn-dark m-1" id="answer-button"></button>
+                <button type="button" class="btn btn-dark m-1" id="answer-button"></button>
+            </div>
+            <div id="next-button">
+                <button type="button" class="btn btn-info" >Next</button>
+            </div>
+        </div>
+    </section>
+     <!-- form for inputting high score and initials -->
+     <section class="container hide" id="high-score-page">
+        <div class="row">
+            <div class="col-md-12 fs-3 d-flex justify-content-center" id="high-score-results">
+                <!-- <p>Here is your score!</p> <p> Save it by putting in your name.</p> -->
+            </div>
+            <div class="col-md-12 d-flex justify-content-center mt-3">
+                <form>
+                    <input type="text" id="result-form" placeholder="your name">
+                </form>
             </div>
         </div>
     </section>
